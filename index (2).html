@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/css/uikit.min.css" />
+
+    <style>
+        body{
+            padding: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="uk-grid-small" uk-grid>
+        <legend class="uk-legend">Suas Informações</legend>
+        
+        <div class="uk-width-1-1" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Tema</label>
+            <select id="select1" class="uk-select">
+                <option selected >--</option> 
+                <option>Assessoria de Imprto cessa</option>        
+                <option>Cartão Presente Leader</option>        
+                <option>Lista Presente Leader</option>        
+                <option>Cartão Visa Leader</option>   
+                <option>Cartão Leader Loja</option>        
+                <option>Lojas Fisicas</option>        
+                <option>Lojas Virtuais</option>        
+                <option>Privacidade de Dados - LGPD</option>               
+                <option>Produtos</option>    
+                <option>Serviços Financeiros-Mais info</option>
+            </select>
+            <label id="vazio1" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-1" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Assunto</label>
+            <select id="select2" class="uk-select">
+                <option selected>--</option>
+                <option>N/A</option>
+                <option>Renegocie seu Cartão</option>
+                <option>Não Recebimento de Fatura</option>
+                <option>Fatura por Email</option>
+                <option>Solicitacao Cartão dependente</option>
+                <option>Não recebimento de Cartão</option>
+                <option>Não Recebimento de Senha</option>
+                <option>Contestação</option>
+                <option>Limite de Credito</option>
+                <option>Emprestimo Pessoal / Saque Rapido</option>
+                <option>Reativação Cartão</option>
+                <option>Parcelamento Compra</option>
+                <option>Anuidade</option>
+                <option>Alteração Cadastral</option>
+                <option>Bloqueio / Desbloqueio</option>
+                <option>Perda / Roubo Cartao</option>
+                <option>Elogios</option>
+                <option>Reclamações</option>
+                <option>Reclamação</option>
+                <option>Sugestões</option>
+                <option>Vale-Compras</option>
+                <option>Outras informações</option>
+                <option>Status meu Pedido</option>
+                <option>Forma de Pagamento</option>
+                <option>Entrega</option>
+                <option>Produtos</option>
+                <option>Troca e devolução</option>
+                <option>Uso do Meus Dados Pessoais</option>
+                <option>Correção de Dados Pessoais</option>
+                <option>Eliminação de Meus Dados Pessoais</option>
+                <option>Explicação de Meus Dados Pessoais</option>
+                <option>Não receber mas contatos/ofertas (não pertube)</option>
+                <option>Outros Assuntos sobre meus Dados Pessoais</option>
+                <option>Dúvidas</option>
+                <option>Capitalização Leader</option>
+                <option>Cred Leader</option>
+                <option>Cartão Leader</option>
+                <option>Cartão Leader Visa</option>
+                <option>Dental Light Leader</option>
+                <option>Estudo OnLine Leader</option>
+                <option>Saque Rapido Leader</option>
+                <option>Super proteção Premiada Leader</option>
+           </select>
+        <label id="vazio2" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-2@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Nome<span style="color:red">*</span></label>
+            <input id="input1" class="uk-input" type="text" placeholder="">
+            <label id="vazio3" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-2@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Sobrenome<span style="color:red">*</span></label>
+            <input id="input2" class="uk-input" type="text" placeholder="">
+            <label id="vazio4" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-1" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">CPF<span style="color:red">*</span></label>
+            <input id="input3" class="uk-input" type="text" placeholder="">
+            <label id="vazio5" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-2@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Endereço de E-mail<span style="color:red">*</span></label>
+            <input id="input4" class="uk-input" type="text" placeholder="">
+            <label id="vazio6" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-2@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Confirmação de E-mail<span style="color:red">*</span></label>
+            <input id="input5" class="uk-input" type="text" placeholder="">
+            <label id="vazio7" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-1" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Telefone para Contato<span style="color:red">*</span></label>
+            <input id="input6" class="uk-input" type="text" placeholder="">
+            <label id="vazio8" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+
+        <legend class="uk-legend">Informações Adicionais</legend>
+ 
+        <div class="uk-width-1-3@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">UF da Loja<span style="color:red">*</span></label>
+            <select id="select3" class="uk-select" onchange="verificaUf(this.value)">
+                <option selected>--</option>
+                <option value="AL">AL</option>
+                <option value="BA">BA</option>
+                <option value="ES">ES</option>
+                <option value="MG">MG</option>
+                <option value="PE">PE</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="SE">SE</option>
+                <option value="SP">SP</option>
+            </select>
+            <label id="vazio9" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-3@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Cidade da Loja<span style="color:red">*</span></label>
+            <select id="select4" class="uk-select" onchange="verificaCidade(this.value)">
+                <option>--</option>
+            </select>
+            <label id="vazio10" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+        <div class="uk-width-1-3@s" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Nome da Loja<span style="color:red">*</span></label>
+            <select id="select5" class="uk-select">
+                <option>--</option>
+            </select>
+            <label id="vazio11" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+
+
+        <div class="uk-width-1-1" style="text-align: left;">
+            <label class="uk-form-label" for="form-stacked-text">Mensagem<span style="color:red">*</span></label>
+            <textarea id="area" rows="5" class="uk-textarea" type="text" placeholder=""></textarea>
+            <label id="vazio12" class="uk-form-label" for="form-stacked-text" style="color:red; font-size: 10px; display: none;">Campo Vazio</label>
+        </div>
+
+        <div class="uk-width-1-3@s" style="text-align: left;">
+            <div uk-form-custom="target: true">
+                <input type="file">
+                <input class="uk-input uk-form-width-medium" type="text" placeholder="Enviar Arquivo" disabled>
+            </div>
+        </div>
+
+        <div class="uk-width-1-1@s" style="text-align: right;">
+            <button style="background-color:#B50000; border-radius:8px;" class="uk-button uk-button-danger" onclick="enviar()">Enviar Pergunta</button>
+        </div>
+        
+    </div>
+   
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.4/dist/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        // VALIDAÇÃO CAMPOS VAZIOS
+        function enviar(){
+            var vazio1 = document.querySelector("label#vazio1")
+            var vazio2 = document.querySelector("label#vazio2")
+            var vazio3 = document.querySelector("label#vazio3")
+            var vazio4 = document.querySelector("label#vazio4")
+            var vazio5 = document.querySelector("label#vazio5")
+            var vazio6 = document.querySelector("label#vazio6")
+            var vazio7 = document.querySelector("label#vazio7")
+            var vazio8 = document.querySelector("label#vazio8")
+            var vazio9 = document.querySelector("label#vazio9")
+            var vazio10 = document.querySelector("label#vazio10")
+            var vazio11 = document.querySelector("label#vazio11")
+            var vazio12 = document.querySelector("label#vazio12")
+
+
+            var select1 = document.querySelector("select#select1") 
+            var select2 = document.querySelector("select#select2")
+            var select3 = document.querySelector("select#select3")
+            var select4 = document.querySelector("select#select4")
+            var select5 = document.querySelector("select#select5")
+
+            var input1 = document.querySelector("input#input1")
+            var input2 = document.querySelector("input#input2")
+            var input3 = document.querySelector("input#input3")
+            var input4 = document.querySelector("input#input4")
+            var input5 = document.querySelector("input#input5")
+            var input6 = document.querySelector("input#input6")
+            
+            var area = document.querySelector("textarea#area")
+            
+            
+            if (select1.value == "--"){
+                vazio1.style.display = "block"
+            }else{
+                vazio1.style.display = "none"
+            }
+
+            if(select2.value == "--"){
+                vazio2.style.display = "block"
+            }
+            if (input1.value == ""){
+                vazio3.style.display = "block"
+            }
+            if (input2.value == ""){
+                vazio4.style.display = "block"
+            }
+            if (input3.value == ""){
+                vazio5.style.display = "block"
+            }
+            if (input4.value == ""){
+                vazio6.style.display = "block"
+            }
+            if (input5.value == ""){
+                vazio7.style.display = "block"
+            }
+            if (input6.value == ""){
+                vazio8.style.display = "block"
+            }
+            if (select3.value == "--"){
+                vazio9.style.display = "block"
+            } 
+            if (select4.value == "--"){
+                vazio10.style.display = "block"
+            } 
+            if (select5.value == "--"){
+                vazio11.style.display = "block"
+            } 
+            if (area.value == ""){
+                vazio12.style.display = "block"
+            }
+            
+        }
+        
+        // VALIDAÇÃO DE CAMPOS UF
+        function verificaUf(value){
+            if(value == "AL"){
+                alert("AL")
+
+                var select4 = document.getElementById("select4");
+
+                var opt1Uf = document.createElement("option");
+                opt1Uf.textContent = "MACEIO";
+                opt1Uf.value = "MACEIO";
+                opt1Uf.className = "MACEIO";
+
+                $(".SALVADOR").remove();
+                $(".CACHOEIRODEITAPEMI").remove();
+                $(".VILAVELHA").remove();
+                $(".VITORIA").remove();
+                $(".BELOHORIZONTE").remove();
+                $(".BETIM").remove();
+                $(".CONTAGEM").remove();
+                $(".JUIZDEFORA").remove();
+                $(".SANTALUZIA").remove();
+                $(".CABODESANTOAGOSTINHO").remove();
+                $(".JABOATAODOSGUARARA").remove();
+                $(".RECIFE").remove();
+
+                select4.appendChild(opt1Uf);
+
+            }else if(value == "BA"){
+                alert("BA")
+
+                var select4 = document.getElementById("select4");
+
+                var opt2Uf = document.createElement("option");
+                opt2Uf.textContent = "SALVADOR";
+                opt2Uf.value = "SALVADOR";
+                opt2Uf.className = "SALVADOR";
+
+                $(".MACEIO").remove();
+                $(".CACHOEIRODEITAPEMI").remove();
+                $(".VILAVELHA").remove();
+                $(".VITORIA").remove();
+                $(".BELOHORIZONTE").remove();
+                $(".BETIM").remove();
+                $(".CONTAGEM").remove();
+                $(".JUIZDEFORA").remove();
+                $(".SANTALUZIA").remove();
+                $(".CABODESANTOAGOSTINHO").remove();
+                $(".JABOATAODOSGUARARA").remove();
+                $(".RECIFE").remove();
+
+                select4.appendChild(opt2Uf);
+
+            }else if(value == "ES"){
+                alert("ES")
+
+                var select4 = document.getElementById("select4");
+
+                var opt3Uf = document.createElement("option");
+                opt3Uf.textContent = "CACHOEIRO DE ITAPEMI";
+                opt3Uf.value = "CACHOEIRO DE ITAPEMI";
+                opt3Uf.className = "CACHOEIRODEITAPEMI";
+
+                var opt4Uf = document.createElement("option");
+                opt4Uf.textContent = "VILA VELHA";
+                opt4Uf.value = "VILA VELHA";
+                opt4Uf.className = "VILAVELHA";
+
+                var opt5Uf = document.createElement("option");
+                opt5Uf.textContent = "VITORIA";
+                opt5Uf.value = "VITORIA";
+                opt5Uf.className = "VITORIA";
+
+                $(".MACEIO").remove();
+                $(".SALVADOR").remove();
+                $(".BELOHORIZONTE").remove();
+                $(".BETIM").remove();
+                $(".CONTAGEM").remove();
+                $(".JUIZDEFORA").remove();
+                $(".SANTALUZIA").remove();
+                $(".CABODESANTOAGOSTINHO").remove();
+                $(".JABOATAODOSGUARARA").remove();
+                $(".RECIFE").remove();
+
+                select4.appendChild(opt3Uf);
+                select4.appendChild(opt4Uf);
+                select4.appendChild(opt5Uf);
+
+            }else if(value == "MG"){
+                alert("MG")
+
+                var select4 = document.getElementById("select4");
+
+                var opt6Uf = document.createElement("option");
+                opt6Uf.textContent = "BELO HORIZONTE";
+                opt6Uf.value = "BELO HORIZONTE";
+                opt6Uf.className = "BELOHORIZONTE";
+
+                var opt7Uf = document.createElement("option");
+                opt7Uf.textContent = "BETIM";
+                opt7Uf.value = "BETIM";
+                opt7Uf.className = "BETIM";
+
+                var opt8Uf = document.createElement("option");
+                opt8Uf.textContent = "CONTAGEM";
+                opt8Uf.value = "CONTAGEM";
+                opt8Uf.className = "CONTAGEM";
+
+                var opt9Uf = document.createElement("option");
+                opt9Uf.textContent = "JUIZ DE FORA";
+                opt9Uf.value = "JUIZ DE FORA";
+                opt9Uf.className = "JUIZDEFORA";
+
+                var opt10Uf = document.createElement("option");
+                opt10Uf.textContent = "SANTA LUZIA";
+                opt10Uf.value = "SANTA LUZIA";
+                opt10Uf.className = "SANTALUZIA";
+
+                $(".MACEIO").remove();
+                $(".SALVADOR").remove();
+                $(".CACHOEIRODEITAPEMI").remove();
+                $(".VILAVELHA").remove();
+                $(".VITORIA").remove();
+                
+                $(".CABODESANTOAGOSTINHO").remove();
+                $(".JABOATAODOSGUARARA").remove();
+                $(".RECIFE").remove();
+
+                select4.appendChild(opt6Uf);
+                select4.appendChild(opt7Uf);
+                select4.appendChild(opt8Uf);
+                select4.appendChild(opt9Uf);
+                select4.appendChild(opt10Uf);
+
+            }else if(value == "PE"){
+                alert("PE")
+
+                var select4 = document.getElementById("select4");
+
+                var opt11Uf = document.createElement("option");
+                opt11Uf.textContent = "CABO DE SANTO AGOSTINHO";
+                opt11Uf.value = "CABO DE SANTO AGOSTINHO";
+                opt11Uf.className = "CABODESANTOAGOSTINHO";
+
+                var opt12Uf = document.createElement("option");
+                opt12Uf.textContent = "JABOATAO DOS GUARARA";
+                opt12Uf.value = "JABOATAO DOS GUARARA";
+                opt12Uf.className = "JABOATAODOSGUARARA";
+
+                var opt13Uf = document.createElement("option");
+                opt13Uf.textContent = "RECIFE";
+                opt13Uf.value = "RECIFE";
+                opt13Uf.className = "RECIFE";
+
+             
+
+                $(".MACEIO").remove();
+                $(".SALVADOR").remove();
+                $(".CACHOEIRODEITAPEMI").remove();
+                $(".VILAVELHA").remove();
+                $(".VITORIA").remove();
+                $(".BELOHORIZONTE").remove();
+                $(".BETIM").remove();
+                $(".CONTAGEM").remove();
+                $(".JUIZDEFORA").remove();
+                $(".SANTALUZIA").remove();
+
+                select4.appendChild(opt11Uf);
+                select4.appendChild(opt12Uf);
+                select4.appendChild(opt13Uf);
+                
+
+            }else if(value == "RJ"){
+                alert("RJ")
+            }else if(value == "RN"){
+                alert("RN")
+            }else if(value == "SE"){
+                alert("SE")
+            }else if(value == "SP"){
+                alert("SP")
+            }
+        };
+        // VALIDAÇÃO DE CAMPO CIDADE
+        function verificaCidade(value){ 
+            if(value == "MACEIO"){ 
+                alert("MACEIO")
+                var select5 = document.getElementById("select5");
+                var opt1Cidade = document.createElement("option");
+                opt1Cidade.textContent = "SHOPPING IGUATEMI (MACEIO)";
+                opt1Cidade.value = "SHOPPING IGUATEMI (MACEIO)";
+                select5.appendChild(opt1Cidade);
+            }
+            if(value == "SALVADOR"){ 
+                alert("SALVADOR")
+                var select5 = document.getElementById("select5");
+                var opt2Cidade = document.createElement("option");
+                opt2Cidade.textContent = "SHOPPING DA BAHIA";
+                opt2Cidade.value = "SHOPPING DA BAHIA";
+                select5.appendChild(opt2Cidade);
+            }
+        }
+
+    </script>
+</body>
+</html>
